@@ -1,0 +1,110 @@
+/* ===== VARIÁVEIS ===== */
+:root {
+    --rosa: #d63384;
+    --rosa-hover: #b5276d;
+    --rosa-claro: #f8d7e3;
+    --sidebar-bg: #3d0026;
+    --sidebar-border: #5a0038;
+    --sidebar-link: #f0bcd4;
+    --body-bg: #f9f0f5;
+}
+
+/* ===== GERAL ===== */
+body {
+    background: var(--body-bg);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    min-height: 100vh;
+    background: var(--sidebar-bg);
+    width: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    z-index: 100;
+}
+
+.sidebar .logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px 20px;
+    border-bottom: 1px solid var(--sidebar-border);
+}
+
+.sidebar a {
+    color: var(--sidebar-link);
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    transition: background 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: var(--rosa);
+    color: #fff;
+}
+
+.sidebar a i {
+    margin-right: 8px;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+    background: #fff;
+    padding: 14px 30px;
+    margin-left: 230px;
+    border-bottom: 1px solid #f0d6e4;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+/* ===== CONTEÚDO ===== */
+.conteudo {
+    margin-left: 230px;
+    padding: 30px;
+}
+
+/* ===== CARDS ===== */
+.card-stat {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-stat .numero {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--rosa);
+}
+
+/* ===== BOTÕES ===== */
+.btn-rosa {
+    background: var(--rosa);
+    color: #fff;
+    border: none;
+}
+
+.btn-rosa:hover {
+    background: var(--rosa-hover);
+    color: #fff;
+}
+
+/* ===== BADGE ROSA ===== */
+.badge-rosa {
+    background: var(--rosa);
+    color: #fff;
+}
+
+/* ===== TABELAS ===== */
+.table-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
